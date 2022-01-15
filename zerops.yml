@@ -11,5 +11,7 @@ admin:
       - '.'
     cache: ['node_modules']
   run:
+    prepare:
+      - npm install -g gatsby-cli
     start: yarn serve
 
