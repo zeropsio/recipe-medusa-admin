@@ -1,0 +1,14 @@
+api:
+  build:
+    base: [nodejs@14]
+    prepare:
+      - npm install -g gatsby-cli
+    build:
+      - yarn install
+      - yarn build
+    deploy:
+      - '.'
+    cache: ['node_modules']
+  run:
+    start: yarn serve
+
