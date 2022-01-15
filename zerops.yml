@@ -5,7 +5,6 @@ admin:
       - npm install -g gatsby-cli
     build:
       - yarn install
-      - yarn start
       - yarn build
     deploy:
       - '.'
